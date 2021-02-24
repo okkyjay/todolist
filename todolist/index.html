@@ -1,0 +1,162 @@
+<html>
+<head>
+<title> to do's </title>
+<style type='text/css'>
+
+    body{
+        background-image: url('images/33.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            
+    }
+    
+
+    .wrapper{
+        width:60%;
+        height:100%;
+        max-width: 960px;
+        margin: 10px auto;
+        background-color: rgb(241, 245, 248);
+        box-sizing: border-box;
+        border:3px solid rgb(22, 22, 22);
+        overflow: hidden;
+    }
+
+    h1{
+        font-weight: normal;
+        font-family: cursive;
+        color:rgb(109, 109, 196)
+    }
+
+    form{
+        display: inline;
+        padding-left: 30px;
+    }
+
+    #addTodo{
+        margin-right: 45px;
+        font-size: 10px;
+    }
+
+    #addTodo::after{
+        content:none;
+        clear:left;
+    }
+
+    #filterTodo{
+        margin-right: 70px;
+        font-size: 10px;
+    }
+
+    #addButton{
+        width:7%;
+        height:5%;
+        border-radius: 30px;
+    }
+
+    #filterButton{
+        width:7%;
+        height:5%;
+        border-radius: 30px;
+    }
+
+    #header{
+        background-color: lightgrey;
+        width:100%;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #header input {
+        width:30%;
+        margin:30px auto;
+        padding:8px;
+        border: 1px solid #ddd;
+        border-radius: 70px;
+    }
+
+
+    #booklist{
+        margin:45px;
+        width: 95%;
+    }
+
+    #booklist ul{
+        list-style-type: none;
+    }
+
+    #booklist li {
+        padding:5px;
+        border-left: 7px solid rgb(141, 137, 137);
+        margin: 20px 5px;
+    }
+
+    
+    #booklist li:hover {
+        border-color: rgb(221, 83, 221);
+    }
+
+    .delete{
+        width:9%;
+        height:4%;
+        margin-right: 5px;
+        margin-left: 25px;
+        text-align: center;
+        border-radius:30px;
+        cursor:pointer;
+        color:white;
+        float:right;
+        background-color: rgb(141,137,137);
+    }
+
+    .title{
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: cursive;
+        padding-left: 25px;
+    }
+
+     input[type="checkbox"] {
+        width:12%;
+        height:3%;
+        float:right;
+        margin-right: 24px;
+        margin-left: 14px;
+    }
+
+
+    .delete:hover{
+        background-color: rgb(221,83,221);
+    }
+
+ 
+
+</style>
+</head>
+<body>
+    <div class='wrapper'>
+    <div id ='header'>
+        <h1> FIKAYO'S TO DO LIST  </h1>
+        <form id='addTodo'>
+            <input id='foraddtodo' type='text'  />
+            <button id="addButton"> add </button>
+        </form>
+
+        <form id='filterTodo'>
+            <input type='text' placeholder="filter" />
+           
+        </form>  
+    </div>
+
+    <div id='booklist'>
+        <ul>
+        </ul>
+    </div>
+    </div>
+ 
+</body>
+<script src='main.js'></script>
+</html>
