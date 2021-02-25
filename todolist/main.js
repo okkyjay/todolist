@@ -27,6 +27,32 @@ addTodos.addEventListener('submit',function(e){
      
 })
 
+//add todos to local storage
+/*
+let todos = JSON.parse(localStorage.getItem("todos")); 
+if(!todos){
+	//todos = []
+}
+todos[] = ['title' => Inputvalue, 'checked' => 0];
+localStorage.setItem("todos", JSON.stringify(todos));
+*/
+
+
+//Get todos
+/*
+
+let todos = JSON.parse(localStorage.getItem("todos"));
+if(todos){
+	todos.forEach(function(todo){
+		display todo here to the user
+		todo.title will return the title of the todo
+		todo.checked will return the value of the checked, you can set the value to 1 if the box has been checked
+	})
+}
+
+*/
+
+
 // delete todos
 lists.addEventListener('click',function(e){
     if(e.target.className == 'delete'){
@@ -51,9 +77,3 @@ filterField.addEventListener('keyup', function(e){
             }
     })
 })
-
-
-
-
-
-
